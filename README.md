@@ -9,7 +9,7 @@ This portfolio project demonstrates an Industrial Engineering and Operations Res
 The MVP objective is to:
 1. Generate a realistic synthetic dataset representing dirty shipping manifests.
 2. Build rule-based and machine-learning (NLP/Anomaly Detection) validators to catch these errors.
-3. Deploy a decision-support Streamlit dashboard that automatically clears high-confidence records and routes high-risk anomalies to human reviewers, simulating a massive reduction in manual workload.
+3. Deploy a decision-support Streamlit dashboard that automatically clears high-confidence records and routes high-risk anomalies to human reviewers, supporting a shift from full manual review toward prioritized exception review.
 
 ## How to Run the Data Generation Script
 The first component of this project is generating the synthetic data.
