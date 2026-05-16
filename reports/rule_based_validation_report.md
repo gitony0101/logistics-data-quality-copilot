@@ -29,17 +29,17 @@ Fourteen strict business rules were implemented representing common manual data-
 ## 6. Performance by Error Type
 | Error Type | Precision | Recall | F1 Score |
 |------------|-----------|--------|----------|
-| future_shipment_date | 1.0000 | 1.0000 | 1.0000 |
 | extreme_declared_value | 1.0000 | 1.0000 | 1.0000 |
-| missing_hs_code | 1.0000 | 1.0000 | 1.0000 |
-| negative_weight | 1.0000 | 1.0000 | 1.0000 |
+| future_shipment_date | 1.0000 | 1.0000 | 1.0000 |
+| port_country_mismatch | 1.0000 | 1.0000 | 1.0000 |
 | missing_product_description | 1.0000 | 1.0000 | 1.0000 |
+| currency_mismatch | 1.0000 | 1.0000 | 1.0000 |
+| missing_hs_code | 1.0000 | 1.0000 | 1.0000 |
+| quantity_zero | 1.0000 | 1.0000 | 1.0000 |
+| unrealistic_weight | 1.0000 | 1.0000 | 1.0000 |
+| negative_weight | 1.0000 | 1.0000 | 1.0000 |
 | invalid_country | 1.0000 | 1.0000 | 1.0000 |
 | invalid_hs_code_format | 1.0000 | 1.0000 | 1.0000 |
-| unrealistic_weight | 1.0000 | 1.0000 | 1.0000 |
-| port_country_mismatch | 1.0000 | 1.0000 | 1.0000 |
-| quantity_zero | 1.0000 | 1.0000 | 1.0000 |
-| currency_mismatch | 1.0000 | 1.0000 | 1.0000 |
 | hs_code_product_mismatch | 0.5109 | 1.0000 | 0.6763 |
 | suspicious_low_value_high_weight | 1.0000 | 0.0642 | 0.1207 |
 | duplicated_manifest_id | 0.0000 | 0.0000 | 0.0000 |
@@ -47,7 +47,7 @@ Fourteen strict business rules were implemented representing common manual data-
 ## 7. High-Recall Rules
 The rule-based system is highly effective at catching deterministic, format-based anomalies.
 Rules performing well (Recall >= 0.8):
-future_shipment_date, extreme_declared_value, missing_hs_code, negative_weight, missing_product_description, invalid_country, invalid_hs_code_format, unrealistic_weight, port_country_mismatch, quantity_zero, currency_mismatch, hs_code_product_mismatch
+extreme_declared_value, future_shipment_date, port_country_mismatch, missing_product_description, currency_mismatch, missing_hs_code, quantity_zero, unrealistic_weight, negative_weight, invalid_country, invalid_hs_code_format, hs_code_product_mismatch
 
 ## 8. Weak Rules and Blind Spots
 Some errors are difficult to capture with hardcoded thresholds or naive dictionary mapping.
