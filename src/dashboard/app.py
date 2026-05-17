@@ -119,7 +119,7 @@ def main():
             
             # Format and display
             display_cols = ['severity', 'rule_name', 'affected_field', 'observed_value', 'detection_message', 'recommended_action']
-            st.dataframe(manifest_flags[display_cols].style.applymap(apply_color, subset=['severity']), use_container_width=True)
+            st.dataframe(manifest_flags[display_cols].style.map(apply_color, subset=['severity']), use_container_width=True)
             
             # 2. Show the raw record context
             st.subheader("Original Manifest Record")
